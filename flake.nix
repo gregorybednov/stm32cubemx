@@ -13,7 +13,7 @@
       stm32cubemx = pkgs.stdenv.mkDerivation rec {
         pname = "stm32cubemx";
         version = "6.11.11";
-        src = builtins.fetchzip {
+        src = fetchzip {
           url = "http://kafpi.local/stm32cube_mx_v${
           builtins.replaceStrings [ "." ] [ "" ] version
           }-lin.zip";
