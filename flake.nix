@@ -33,7 +33,7 @@
       desktopName = "STM32CubeMX";
       categories = [ "Development" ];
       icon = "stm32cubemx";
-      comment = meta.description;
+      comment = "A graphical tool for configuring STM32 microcontrollers and microprocessors";
       terminal = false;
       startupNotify = false;
       mimeTypes = [
