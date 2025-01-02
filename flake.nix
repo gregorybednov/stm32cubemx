@@ -9,6 +9,7 @@
     let
       pkgs = import nixpkgs { system = "x86_64-linux"; };
 
+      iconame = "STM32CubeMX";
       stm32cubemx = pkgs.stdenv.mkDerivation rec {
         pname = "stm32cubemx";
         version = "6.11.11";
