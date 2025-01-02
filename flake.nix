@@ -20,7 +20,7 @@
           stripRoot = false;
         };
 
-        nativeBuildInputs = [
+        nativeBuildInputs = with pkgs; [
           fdupes
           icoutils
           imagemagick
