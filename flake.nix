@@ -49,7 +49,7 @@
 
       cat << EOF > $out/bin/${pname}
       #!${pkgs.stdenvNoCC.shell}
-      ${jdk17}/bin/java -jar $out/opt/STM32CubeMX/STM32CubeMX
+      ${pkgs.jdk17}/bin/java -jar $out/opt/STM32CubeMX/STM32CubeMX
       EOF
       chmod +x $out/bin/${pname}
 
