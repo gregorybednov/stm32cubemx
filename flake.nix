@@ -71,25 +71,6 @@
       cp ${desktopItem}/share/applications/*.desktop $out/share/applications
     '';
 
-    meta = with lib; {
-      description = "A graphical tool for configuring STM32 microcontrollers and microprocessors";
-      longDescription = ''
-        A graphical tool that allows a very easy configuration of STM32
-        microcontrollers and microprocessors, as well as the generation of the
-        corresponding initialization C code for the Arm® Cortex®-M core or a
-        partial Linux® Device Tree for Arm® Cortex®-A core), through a
-        step-by-step process.
-      '';
-      homepage = "https://www.st.com/en/development-tools/stm32cubemx.html";
-      sourceProvenance = with sourceTypes; [ binaryBytecode ];
-      license = licenses.unfree;
-      maintainers = with maintainers; [
-        angaz
-        wucke13
-      ];
-      platforms = [ "x86_64-linux" ];
-    };
-
         fhsEnv = pkgs.buildFHSEnv {
           name = "${pname}-fhs-env";
           targetPkgs = p: with p; [
