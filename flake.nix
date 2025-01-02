@@ -48,7 +48,7 @@
       chmod +rx $out/opt/STM32CubeMX/STM32CubeMX
 
       cat << EOF > $out/bin/${pname}
-      #!${stdenvNoCC.shell}
+      #!${pkgs.stdenvNoCC.shell}
       ${jdk17}/bin/java -jar $out/opt/STM32CubeMX/STM32CubeMX
       EOF
       chmod +x $out/bin/${pname}
