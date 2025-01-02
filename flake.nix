@@ -26,7 +26,7 @@
           imagemagick
         ];
     
-    desktopItem = makeDesktopItem {
+    desktopItem = pkgs.makeDesktopItem {
       name = "STM32CubeMX";
       exec = "stm32cubemx";
       desktopName = "STM32CubeMX";
