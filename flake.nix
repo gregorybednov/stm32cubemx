@@ -17,7 +17,7 @@
           url = "http://kafpi.local/stm32cube_mx_v${
           builtins.replaceStrings [ "." ] [ "" ] version
           }-lin.zip";
-          hash = "sha256-q9C0c+3g85riJO7cCD8q76x1wV1wl3H0UPb1+MTMr4s=";
+          hash = "";
           stripRoot = false;
         };
 
