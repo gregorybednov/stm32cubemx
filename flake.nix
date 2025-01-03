@@ -13,11 +13,12 @@
       stm32cubemx = pkgs.stdenv.mkDerivation rec {
         pname = "stm32cubemx";
         version = "6.11.1";
-        src = builtins.fetchTarball {
+        src = pkgs.fetchzip {
           url = "http://kafpi.local/stm32cubemx_v${
           builtins.replaceStrings [ "." ] [ "" ] version
-          }-lin.tar.gz";
-          sha256 = "1aq35pmn6201dcaprdqj126b4mzfkga70gil36iqp84bhg7jq6zb";
+          }-lin.zip";
+          hash = "";
+          stripRoot = false;
         };
 
         nativeBuildInputs = with pkgs; [
