@@ -17,8 +17,8 @@
           url = "http://kafpi.local/stm32cube_mx_v${
           builtins.replaceStrings [ "." ] [ "" ] version
           }-lin.tar.gz";
-          hash = "";
-          stripRoot = false;
+          sha256 = "";
+          #stripRoot = false;
         };
 
         nativeBuildInputs = with pkgs; [
