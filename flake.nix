@@ -18,7 +18,7 @@
           builtins.replaceStrings [ "." ] [ "" ] version
           }-lin.tar.gz";
           sha256 = "1aq35pmn6201dcaprdqj126b4mzfkga70gil36iqp84bhg7jq6zb";
-          #stripRoot = false;
+          stripRoot = false;
         };
 
         nativeBuildInputs = with pkgs; [
